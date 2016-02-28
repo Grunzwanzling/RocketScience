@@ -32,7 +32,19 @@ public class Bullet implements UpdateListener {
 
 	@Override
 	public void update(UpdateEvent ue) {
-		// TODO Auto-generated method stub
+		for (int i = 0; i <= ue.getMs(); i++) {
+			x = x + speedX;
+			y = y + speedY;
+			if (x <= 0)
+				speedX = Math.abs(speedX);
+			if (y <= 0)
+				speedY = Math.abs(speedY);
+
+			if (x >= ue.getSizeX())
+				speedX = -Math.abs(speedX);
+			if (y >= ue.getSizeY())
+				speedY = -Math.abs(speedY);
+		}
 
 	}
 
