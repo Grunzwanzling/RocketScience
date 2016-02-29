@@ -11,6 +11,6 @@ import java.util.EventListener;
  */
 public interface UpdateListener extends EventListener {
 	// event dispatch methods
-	public void update(UpdateEvent ue);
+	public void hitBy(UpdateEvent ue);
 
 }

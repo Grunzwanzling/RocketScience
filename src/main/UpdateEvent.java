@@ -9,30 +9,14 @@ package main;
  */
 public class UpdateEvent {
 
-	int ms, sizeX, sizeY;
+	Bullet hitBy;
 
-	public int getSizeX() {
-		return sizeX;
+	public Bullet getHitBy() {
+		return hitBy;
 	}
 
-	public void setSizeX(int sizeX) {
-		this.sizeX = sizeX;
-	}
-
-	public int getSizeY() {
-		return sizeY;
-	}
-
-	public void setSizeY(int sizeY) {
-		this.sizeY = sizeY;
-	}
-
-	public int getMs() {
-		return ms;
-	}
-
-	public void setMs(int ms) {
-		this.ms = ms;
+	public void setHitBy(Bullet hitBy) {
+		this.hitBy = hitBy;
 	}
 
 }
